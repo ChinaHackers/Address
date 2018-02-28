@@ -10,14 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var addressButton: UIButton!  // 选择地址按钮
+    /// 选择地址按钮
+    @IBOutlet weak var addressButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addressButton.addTarget(self, action: #selector(selectAddress), for: .touchUpInside)
-
-        
+        addressButton.addTarget(self, action: #selector(selectAddress), for: .touchUpInside)   
     }
     
     // MARK: - 选择地址按钮点击事件
