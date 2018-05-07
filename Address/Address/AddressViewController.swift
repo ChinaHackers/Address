@@ -78,7 +78,7 @@ class AddressViewController: UIViewController {
             guard let addressPath: String = Bundle.main.path(forResource: "address", ofType: "plist") else {return}
             // 加载plist
             guard let dict = NSDictionary(contentsOfFile: addressPath) else { return }
-            provinces = dict.object(forKey: "address") as! [[String : Any]]
+            provinces = dict.object(forKey: "address") as? [[String : Any]]
         }
     }
     
@@ -131,9 +131,9 @@ extension AddressViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         
         if displayType == .Area {
-            cell.accessoryType = UITableViewCellAccessoryType.none
+            cell.accessoryType = UITableViewCell.AccessoryType.none
         }else {
-            cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+            cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         }
         
         switch displayType {
