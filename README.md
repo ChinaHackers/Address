@@ -1,5 +1,6 @@
 ### Province \ City \ Area Three Connections
-![language](https://img.shields.io/badge/language-swift-orange.svg)
+
+![Languages](https://img.shields.io/badge/language-swift%20|%20objc-orange.svg?style=flat)
 [![Swift  4.0](https://img.shields.io/badge/swift-4.2+-blue.svg?style=flat)](https://developer.apple.com/swift/)
 ![xcode version](https://img.shields.io/badge/xcode-10-brightgreen.svg)
 ![build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)
@@ -10,4 +11,4 @@
 
 ### Screencast from our Demo
 
-![](https://github.com/ChinaHackers/Address/raw/master/Address/preview.gif)
+![](https://github.com/ChinaHackers/Address/raw/master/preview/preview.gif)
